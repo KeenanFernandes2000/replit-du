@@ -215,22 +215,6 @@ const Contact: React.FC = () => {
                 ))}
               </div>
             </div>
-            
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Location</h3>
-              <div className="h-80 bg-gray-100 rounded-lg flex items-center justify-center">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.795798243364!2d47.977972!3d29.375883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf851dfb11c357%3A0xfa91bf8bb2f5175c!2sAl%20Hamra%20Tower%2C%20Kuwait%20City%2C%20Kuwait!5e0!3m2!1sen!2sus!4v1696347153050!5m2!1sen!2sus" 
-                  width="100%" 
-                  height="100%" 
-                  className="rounded-lg border-0"
-                  allowFullScreen={false}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="BIC Kuwait Location"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
