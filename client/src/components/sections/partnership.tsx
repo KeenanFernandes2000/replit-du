@@ -37,8 +37,8 @@ const Partnership: React.FC = () => {
           </div>
           
           <div className="lg:w-1/2">
-            <h3 className="text-2xl font-bold text-primary mb-4">Exclusive Representative for Kuwait</h3>
-            <p className="text-gray-600 mb-6">As the strategic partner of potential.com in Kuwait, BIC Kuwait delivers innovative technology solutions that are customized for the local market while maintaining global standards of excellence.</p>
+            <h3 className="text-2xl font-bold text-primary mb-4">Representative for Kuwait</h3>
+            <p className="text-gray-600 mb-6">As a strategic partner of potential.com in Kuwait, BIC Kuwait delivers innovative technology solutions that are customized for the local market while maintaining global standards of excellence.</p>
             
             <div className="bg-gray-100 rounded-lg p-6 mb-6">
               <h4 className="font-bold text-lg mb-3">Partnership Benefits</h4>
