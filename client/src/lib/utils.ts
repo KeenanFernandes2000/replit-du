@@ -6,7 +6,5 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const materialIcon = (name: string, className?: string) => {
-  return (
-    <span className={`material-icons ${className || ""}`}>{name}</span>
-  );
+  return className ? `material-icons ${className}` : "material-icons";
 };
