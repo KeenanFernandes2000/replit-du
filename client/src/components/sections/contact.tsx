@@ -65,16 +65,6 @@ const Contact: React.FC = () => {
       content: 'Al Hamra Tower, Kuwait City, Kuwait'
     },
     {
-      icon: 'phone',
-      title: 'Phone',
-      content: '+965 2200 0000'
-    },
-    {
-      icon: 'email',
-      title: 'Email',
-      content: 'info@bickuwait.com'
-    },
-    {
       icon: 'schedule',
       title: 'Business Hours',
       content: 'Sunday - Thursday: 8:00 AM - 5:00 PM'
