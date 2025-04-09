@@ -88,26 +88,6 @@ const Services: React.FC = () => {
         { text: 'Cloud migration services' },
         { text: '24/7 monitoring and support' }
       ]
-    },
-    {
-      icon: 'security',
-      title: 'Cybersecurity',
-      description: 'Comprehensive security solutions to protect your digital assets, data, and infrastructure from evolving threats.',
-      features: [
-        { text: 'Threat detection & prevention' },
-        { text: 'Security assessment' },
-        { text: 'Compliance management' }
-      ]
-    },
-    {
-      icon: 'analytics',
-      title: 'Data Analytics',
-      description: 'Turn your data into actionable insights with our advanced analytics solutions and business intelligence tools.',
-      features: [
-        { text: 'Business intelligence' },
-        { text: 'Predictive analytics' },
-        { text: 'Custom reporting dashboards' }
-      ]
     }
   ];
 
