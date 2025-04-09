@@ -24,7 +24,7 @@ const Partnership: React.FC = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Strategic Partnership</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">BIC Kuwait is proud to be the exclusive strategic partner of potential.com in Kuwait, bringing world-class technology solutions to the local market.</p>
         </div>
-        
+
         <div className="flex flex-col lg:flex-row items-center lg:space-x-12">
           <div className="lg:w-1/2 mb-10 lg:mb-0">
             <img 
@@ -35,11 +35,11 @@ const Partnership: React.FC = () => {
               height="400"
             />
           </div>
-          
+
           <div className="lg:w-1/2">
             <h3 className="text-2xl font-bold text-primary mb-4">Representative for Kuwait</h3>
             <p className="text-gray-600 mb-6">As a strategic partner of potential.com in Kuwait, BIC Kuwait delivers innovative technology solutions that are customized for the local market while maintaining global standards of excellence.</p>
-            
+
             <div className="bg-gray-100 rounded-lg p-6 mb-6">
               <h4 className="font-bold text-lg mb-3">Partnership Benefits</h4>
               <ul className="space-y-3">
@@ -51,13 +51,7 @@ const Partnership: React.FC = () => {
                 ))}
               </ul>
             </div>
-            
-            <Button 
-              onClick={scrollToContact}
-              className="bg-primary hover:bg-primary-dark text-white transition px-8 py-3 rounded-lg font-semibold inline-block"
-            >
-              Discuss Partnership Opportunities
-            </Button>
+
           </div>
         </div>
       </div>
