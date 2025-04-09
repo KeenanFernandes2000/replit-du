@@ -16,9 +16,9 @@ const CTA: React.FC = () => {
         <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">Contact us today to discuss how our ICT solutions can help you achieve your business goals and stay ahead in the digital era.</p>
         <Button 
           onClick={scrollToContact}
-          className="bg-accent hover:bg-accent-dark text-white transition px-10 py-4 rounded-lg font-semibold inline-block text-lg"
+          className="bg-accent hover:bg-accent-dark text-white transition px-10 py-4 rounded-lg font-semibold inline-flex items-center justify-center text-lg mx-auto"
         >
-          Get Started Today
+          Get in Touch
         </Button>
       </div>
     </section>
