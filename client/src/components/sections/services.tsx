@@ -78,16 +78,6 @@ const Services: React.FC = () => {
         { text: 'Predictive analytics' },
         { text: 'Process optimization' }
       ]
-    },
-    {
-      icon: 'cloud',
-      title: 'Cloud Solutions',
-      description: 'Scalable cloud infrastructure and migration services to enhance flexibility, security, and operational efficiency.',
-      features: [
-        { text: 'Public/private cloud options' },
-        { text: 'Cloud migration services' },
-        { text: '24/7 monitoring and support' }
-      ]
     }
   ];
 
