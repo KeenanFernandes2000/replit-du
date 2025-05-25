@@ -44,9 +44,9 @@ const Footer: React.FC = () => {
               <div className="h-10 w-10 bg-white rounded-lg flex items-center justify-center mr-2">
                 <span className="text-primary font-bold text-xl">PMC</span>
               </div>
-              <span className="font-bold text-xl">PMC Jordan</span>
+              <span className="font-bold text-xl">PMC Pakistan</span>
             </div>
-            <p className="text-gray-400 mb-4">Your trusted partner for innovative digital solutions in Jordan.</p>
+            <p className="text-gray-400 mb-4">Your trusted partner for innovative digital solutions in Pakistan.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-accent transition">
                 <FacebookIcon className="w-5 h-5" />
@@ -222,7 +222,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-10 border-t border-white/20 text-center text-white/70">
-          <p>&copy; {new Date().getFullYear()} PMC Jordan. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} PMC Pakistan. All rights reserved.</p>
         </div>
       </div>
     </footer>
