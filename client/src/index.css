@@ -52,6 +52,140 @@
 @layer components {
   .hero-gradient {
     background: linear-gradient(135deg, rgba(13, 36, 73, 0.98), rgba(30, 85, 170, 0.9));
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .tech-animation-background {
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    background-image: 
+      /* Dots for nodes */
+      radial-gradient(circle at 25% 35%, rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+      radial-gradient(circle at 75% 65%, rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+      radial-gradient(circle at 45% 20%, rgba(255, 255, 255, 0.5) 1px, transparent 2px),
+      radial-gradient(circle at 60% 40%, rgba(255, 255, 255, 0.4) 1px, transparent 1px),
+      radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+      radial-gradient(circle at 80% 15%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+      /* Grid for circuit paths */
+      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      /* Diagonal lines for connections */
+      linear-gradient(45deg, rgba(255, 255, 255, 0.05) 1px, transparent 2px),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, transparent 2px);
+    background-size: 
+      40px 40px, 40px 40px, 60px 60px, 50px 50px, 70px 70px, 80px 80px, 
+      20px 20px, 20px 20px, 
+      30px 30px, 30px 30px;
+    background-position: 
+      0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 
+      0 0, 0 0, 
+      0 0, 0 0;
+    animation: animateCircuits 20s linear infinite;
+  }
+
+  /* Add a pseudo-element for additional circuit elements */
+  .tech-animation-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      /* Circuit board paths */
+      linear-gradient(to right, transparent 49.5%, rgba(255, 255, 255, 0.1) 49.5%, rgba(255, 255, 255, 0.1) 50.5%, transparent 50.5%),
+      linear-gradient(to bottom, transparent 49.5%, rgba(255, 255, 255, 0.1) 49.5%, rgba(255, 255, 255, 0.1) 50.5%, transparent 50.5%);
+    background-size: 100px 100px, 100px 100px;
+    animation: animateCircuitLines 15s linear infinite;
+  }
+
+  @keyframes animateCircuits {
+    0% {
+      background-position: 
+        0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 
+        0 0, 0 0, 
+        0 0, 0 0;
+    }
+    100% {
+      background-position: 
+        40px 40px, 40px 40px, 60px 60px, 50px 50px, 70px 70px, 80px 80px, 
+        20px 20px, 20px 20px, 
+        30px 30px, 30px 30px;
+    }
+  }
+
+  @keyframes animateCircuitLines {
+    0% {
+      background-position: 0 0, 0 0;
+    }
+    100% {
+      background-position: 100px 0, 0 100px;
+    }
+  }
+  
+  /* Floating binary bits and data elements */
+  .floating-bits {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .floating-bits::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 20% 25%, rgba(255, 255, 255, 0.3) 3px, transparent 3px),
+      radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.3) 2px, transparent 2px),
+      radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.3) 2px, transparent 2px),
+      radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.3) 2px, transparent 2px),
+      radial-gradient(circle at 10% 60%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+      radial-gradient(circle at 90% 30%, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+    background-size: 150px 150px;
+    animation: floatingBits 25s linear infinite;
+  }
+  
+  .floating-bits::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      /* 1s and 0s to represent binary data */
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><text x="10" y="20" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.15)">1</text></svg>'),
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><text x="10" y="20" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.15)">0</text></svg>');
+    background-size: 40px 40px;
+    opacity: 0.3;
+    animation: floatingData 20s linear infinite;
+  }
+  
+  @keyframes floatingBits {
+    0% {
+      background-position: 0 0;
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      background-position: 150px 150px;
+      opacity: 0.2;
+    }
+  }
+  
+  @keyframes floatingData {
+    0% {
+      background-position: 0 0, 20px 20px;
+    }
+    100% {
+      background-position: 40px 40px, 60px 60px;
+    }
   }
   
   .nav-link {

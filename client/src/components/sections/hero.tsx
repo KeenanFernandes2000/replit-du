@@ -12,15 +12,15 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="hero-gradient pt-28 pb-16 lg:pt-40 lg:pb-24">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 mb-10 lg:mb-0">
-            <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
+        <div className="relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
               Innovative Digital Solutions for Jordan's Future
             </h1>
-            <p className="text-white/90 text-lg mb-8 max-w-xl">
+            <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
               PMC Jordan delivers cutting-edge AI voice bots, chat bots, and comprehensive digital solutions to transform your business operations.
             </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-5">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-5 justify-center">
               <Button
                 onClick={() => scrollToSection('services')}
                 className="bg-white text-primary hover:bg-white/90 transition px-8 py-5 rounded-md font-semibold text-center shadow-md"
@@ -35,14 +35,8 @@ const Hero: React.FC = () => {
               </Button>
             </div>
           </div>
-          <div className="lg:w-1/2 flex justify-center">
-            <img 
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-              alt="Digital technology illustration" 
-              className="rounded-lg shadow-2xl max-w-full h-auto lg:max-w-lg" 
-              width="600" 
-              height="400"
-            />
+          <div className="tech-animation-background absolute inset-0 z-0">
+            <div className="floating-bits"></div>
           </div>
         </div>
       </div>
