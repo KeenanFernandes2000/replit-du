@@ -62,12 +62,12 @@ const Contact: React.FC = () => {
     {
       icon: 'location_on',
       title: 'Address',
-      content: 'Al Hamra Tower, Kuwait City, Kuwait'
+      content: 'King Hussein Business Park, Amman, Jordan'
     },
     {
       icon: 'schedule',
       title: 'Business Hours',
-      content: 'Sunday - Thursday: 8:00 AM - 5:00 PM'
+      content: 'Sunday - Thursday: 9:00 AM - 6:00 PM'
     }
   ];
 
@@ -130,7 +130,7 @@ const Contact: React.FC = () => {
                         <FormLabel className="text-gray-900 font-semibold">Phone Number</FormLabel>
                         <FormControl>
                           <Input 
-                            placeholder="+965 xxxx xxxx" 
+                            placeholder="+962 7 xxxx xxxx" 
                             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" 
                             {...field} 
                           />
