@@ -12,7 +12,7 @@ const Partnership: React.FC = () => {
 
   const benefits = [
     'Access to cutting-edge global technologies',
-    'Customized solutions for Jordan\'s market needs',
+    'Customized solutions for Pakistan\'s market needs',
     'Combined expertise in technology and local business',
     'Comprehensive training and implementation support'
   ];

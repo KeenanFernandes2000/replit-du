@@ -5,27 +5,27 @@ const About: React.FC = () => {
     <section id="about" className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">About PMC Jordan</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">Learn more about our mission, values, and commitment to advancing technology in Jordan.</p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">About PMC Pakistan</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">Learn more about our mission, values, and commitment to advancing technology in Pakistan.</p>
         </div>
         
         <div className="flex flex-col lg:flex-row items-center lg:space-x-12">
           <div className="lg:w-1/2 order-2 lg:order-1">
             <h3 className="text-2xl font-bold text-primary mb-4">Our Mission</h3>
-            <p className="text-gray-600 mb-6">PMC Jordan is dedicated to providing innovative digital solutions that empower businesses in Jordan to thrive in the digital age. We aim to be the trusted technology partner that helps organizations transform, grow, and succeed through tailored technology implementations.</p>
+            <p className="text-gray-600 mb-6">PMC Pakistan is dedicated to providing innovative digital solutions that empower businesses in Pakistan to thrive in the digital age. We aim to be the trusted technology partner that helps organizations transform, grow, and succeed through tailored technology implementations.</p>
             
             <h3 className="text-2xl font-bold text-primary mb-4">Our Vision</h3>
-            <p className="text-gray-600 mb-6">To be Jordan's leading provider of advanced technology solutions, driving digital transformation across industries and contributing to the country's vision of a diversified, knowledge-based economy.</p>
+            <p className="text-gray-600 mb-6">To be Pakistan's leading provider of advanced technology solutions, driving digital transformation across industries and contributing to the country's vision of a diversified, knowledge-based economy.</p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
               <div className="bg-white p-7 rounded-md shadow-lg border-l-4 border-primary">
                 <h4 className="font-bold text-lg mb-3 text-primary">Experience</h4>
-                <p className="text-gray-600">Years of expertise in delivering technology solutions across various industries in Jordan.</p>
+                <p className="text-gray-600">Years of expertise in delivering technology solutions across various industries in Pakistan.</p>
               </div>
               
               <div className="bg-white p-7 rounded-md shadow-lg border-l-4 border-secondary">
                 <h4 className="font-bold text-lg mb-3 text-primary">Local Knowledge</h4>
-                <p className="text-gray-600">Deep understanding of Jordan's business landscape, regulations, and market needs.</p>
+                <p className="text-gray-600">Deep understanding of Pakistan's business landscape, regulations, and market needs.</p>
               </div>
             </div>
           </div>
