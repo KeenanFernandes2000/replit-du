@@ -58,7 +58,7 @@ const Header: React.FC = () => {
             <span className="text-white font-bold text-xl">PMC</span>
           </div>
           <div>
-            <span className="font-bold text-primary text-xl">PMC Jordan</span>
+            <span className="font-bold text-primary text-xl">PMC Pakistan</span>
             <p className="text-xs text-gray-600">Digital Solutions</p>
           </div>
         </a>
