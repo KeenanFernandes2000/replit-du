@@ -191,14 +191,16 @@ const Contact: React.FC = () => {
           
           <div className="lg:w-1/2 lg:pl-12">
             <div className="mb-10">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-primary mb-8">Contact Information</h3>
               
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-start">
-                    <MaterialIcon icon={info.icon} className="text-primary mr-4" />
+                  <div key={index} className="flex items-start bg-white p-6 rounded-md shadow-md border-l-4 border-secondary">
+                    <div className="bg-primary/10 p-3 rounded-full mr-5">
+                      <MaterialIcon icon={info.icon} className="text-primary text-2xl" />
+                    </div>
                     <div>
-                      <h4 className="font-bold text-gray-900">{info.title}</h4>
+                      <h4 className="font-bold text-gray-900 text-lg mb-1">{info.title}</h4>
                       <p className="text-gray-600">{info.content}</p>
                     </div>
                   </div>

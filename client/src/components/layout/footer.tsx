@@ -35,8 +35,8 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="container mx-auto px-4">
+    <footer className="bg-primary text-white py-16">
+      <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           {/* Company Info */}
           <div>
@@ -221,7 +221,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="pt-8 border-t border-gray-800 text-center text-gray-500">
+        <div className="pt-10 border-t border-white/20 text-center text-white/70">
           <p>&copy; {new Date().getFullYear()} PMC Jordan. All rights reserved.</p>
         </div>
       </div>
