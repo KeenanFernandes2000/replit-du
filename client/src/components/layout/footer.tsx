@@ -42,11 +42,11 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-4">
               <div className="h-10 w-10 bg-white rounded-lg flex items-center justify-center mr-2">
-                <span className="text-primary font-bold text-xl">BIC</span>
+                <span className="text-primary font-bold text-xl">PMC</span>
               </div>
-              <span className="font-bold text-xl">BIC Kuwait</span>
+              <span className="font-bold text-xl">PMC Jordan</span>
             </div>
-            <p className="text-gray-400 mb-4">Your trusted partner for innovative ICT solutions in Kuwait.</p>
+            <p className="text-gray-400 mb-4">Your trusted partner for innovative digital solutions in Jordan.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-accent transition">
                 <FacebookIcon className="w-5 h-5" />
@@ -222,7 +222,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} BIC Kuwait. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} PMC Jordan. All rights reserved.</p>
         </div>
       </div>
     </footer>
