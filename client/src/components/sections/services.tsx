@@ -31,7 +31,7 @@ const ServiceCard: React.FC<ServiceProps> = ({ icon, title, description, feature
       <ul className="text-gray-600 space-y-2 mb-6">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start">
-            <CheckCircleIcon className="text-accent mr-2 h-5 w-5 flex-shrink-0" />
+            <CheckCircleIcon className="text-secondary mr-2 h-5 w-5 flex-shrink-0" />
             <span>{feature.text}</span>
           </li>
         ))}
@@ -39,9 +39,9 @@ const ServiceCard: React.FC<ServiceProps> = ({ icon, title, description, feature
       <Button 
         variant="link"
         onClick={scrollToContact}
-        className="text-primary font-semibold hover:text-primary-dark p-0 flex items-center"
+        className="text-secondary font-semibold hover:text-secondary/80 p-0 flex items-center"
       >
-        Learn More <ArrowRightIcon className="ml-1 h-4 w-4" />
+        Learn More <ArrowRightIcon className="ml-1.5 h-4 w-4" />
       </Button>
     </div>
   );

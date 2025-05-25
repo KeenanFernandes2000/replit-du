@@ -40,13 +40,13 @@ const Partnership: React.FC = () => {
             <h3 className="text-2xl font-bold text-primary mb-4">PMC in Jordan</h3>
             <p className="text-gray-600 mb-6">As part of the pmc.me family in Jordan, we deliver innovative technology solutions that are customized for the Jordanian market while maintaining global standards of excellence.</p>
 
-            <div className="bg-gray-100 rounded-lg p-6 mb-6">
-              <h4 className="font-bold text-lg mb-3">Partnership Benefits</h4>
-              <ul className="space-y-3">
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-md p-8 mb-6 shadow-md border border-gray-200">
+              <h4 className="font-bold text-lg mb-4 text-primary">Partnership Benefits</h4>
+              <ul className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircleIcon className="text-accent mr-2 h-5 w-5 flex-shrink-0" />
-                    <span>{benefit}</span>
+                    <CheckCircleIcon className="text-secondary mr-3 h-5 w-5 flex-shrink-0" />
+                    <span className="text-gray-700">{benefit}</span>
                   </li>
                 ))}
               </ul>

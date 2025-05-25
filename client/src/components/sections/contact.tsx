@@ -72,8 +72,8 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-24 bg-gray-50">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">Reach out to our team to discuss your technology needs and discover how we can help your business grow.</p>
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
         
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
-            <div className="bg-gray-100 p-8 rounded-lg">
+            <div className="bg-white p-10 rounded-md shadow-xl border border-gray-100">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
               
               <Form {...form}>
@@ -179,7 +179,7 @@ const Contact: React.FC = () => {
                   
                   <Button 
                     type="submit" 
-                    className="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-lg transition"
+                    className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-4 px-6 rounded-md transition shadow-md"
                     disabled={mutation.isPending}
                   >
                     {mutation.isPending ? 'Sending...' : 'Send Message'}
