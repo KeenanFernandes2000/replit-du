@@ -22,7 +22,7 @@ const Partnership: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Strategic Partnership</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">PMC Jordan is part of the pmc.me family, bringing world-class technology solutions to the Jordanian market.</p>
+          <p className="text-gray-600 max-w-2xl mx-auto">PMC Jordan has partnered with potential.com, bringing world-class AI Agentic solutions to the Jordanian market.</p>
         </div>
 
         <div className="flex flex-col lg:flex-row items-center lg:space-x-12">
@@ -37,8 +37,8 @@ const Partnership: React.FC = () => {
           </div>
 
           <div className="lg:w-1/2">
-            <h3 className="text-2xl font-bold text-primary mb-4">PMC in Jordan</h3>
-            <p className="text-gray-600 mb-6">As part of the pmc.me family in Jordan, we deliver innovative technology solutions that are customized for the Jordanian market while maintaining global standards of excellence.</p>
+            <h3 className="text-2xl font-bold text-primary mb-4">Partnership with potential.com</h3>
+            <p className="text-gray-600 mb-6">Through our strategic partnership with potential.com, we deliver world-class AI Agentic solutions that are customized for the Jordanian market while maintaining global standards of excellence.</p>
 
             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-md p-8 mb-6 shadow-md border border-gray-200">
               <h4 className="font-bold text-lg mb-4 text-primary">Partnership Benefits</h4>
