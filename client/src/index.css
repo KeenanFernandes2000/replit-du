@@ -7,7 +7,7 @@
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
     
-    --muted: 210 40% 96.1%;
+    --muted: 216 33% 97%;
     --muted-foreground: 215.4 16.3% 46.9%;
     
     --popover: 0 0% 100%;
@@ -19,19 +19,19 @@
     --card: 0 0% 100%;
     --card-foreground: 222.2 47.4% 11.2%;
     
-    --primary: 214 100% 36%;
+    --primary: 216 71% 16%;
     --primary-foreground: 210 40% 98%;
     
-    --secondary: 198 100% 45%;
+    --secondary: 213 73% 50%;
     --secondary-foreground: 210 40% 98%;
     
-    --accent: 16 100% 57%;
+    --accent: 220 70% 50%;
     --accent-foreground: 210 40% 98%;
     
     --destructive: 0 100% 50%;
     --destructive-foreground: 210 40% 98%;
     
-    --ring: 215 20.2% 65.1%;
+    --ring: 216 71% 16%;
     
     --radius: 0.5rem;
   }
@@ -51,7 +51,7 @@
 
 @layer components {
   .hero-gradient {
-    background: linear-gradient(135deg, rgba(0, 86, 179, 0.95), rgba(0, 168, 232, 0.9));
+    background: linear-gradient(135deg, rgba(13, 36, 73, 0.98), rgba(30, 85, 170, 0.9));
   }
   
   .nav-link {

@@ -22,12 +22,12 @@ const ServiceCard: React.FC<ServiceProps> = ({ icon, title, description, feature
   };
 
   return (
-    <div className="service-card bg-white rounded-lg shadow-lg p-6 transition duration-300">
-      <div className="bg-secondary/10 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
-        <MaterialIcon icon={icon} className="text-secondary text-2xl" />
+    <div className="service-card bg-white rounded-md shadow-xl p-8 transition duration-300 border-t-4 border-primary/20">
+      <div className="bg-primary/10 w-16 h-16 rounded-md flex items-center justify-center mb-5">
+        <MaterialIcon icon={icon} className="text-primary text-3xl" />
       </div>
-      <h3 className="text-xl font-bold mb-3">{title}</h3>
-      <p className="text-gray-600 mb-4">{description}</p>
+      <h3 className="text-xl font-bold mb-4 text-gray-900">{title}</h3>
+      <p className="text-gray-600 mb-5">{description}</p>
       <ul className="text-gray-600 space-y-2 mb-6">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start">

@@ -50,8 +50,8 @@ const Header: React.FC = () => {
   }, [activeSection]);
 
   return (
-    <header className="fixed w-full bg-white shadow-md z-50">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+    <header className="fixed w-full bg-white shadow-lg z-50">
+      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#" onClick={() => scrollToSection('home')} className="flex items-center space-x-2">
           <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center">
@@ -128,7 +128,7 @@ const Header: React.FC = () => {
           </a>
           <Button 
             onClick={() => scrollToSection('contact')}
-            className="bg-accent hover:bg-accent-dark text-white px-5 py-2 rounded-lg transition font-semibold"
+            className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-md transition font-semibold"
           >
             Contact Us
           </Button>
@@ -192,7 +192,7 @@ const Header: React.FC = () => {
           </a>
           <Button 
             onClick={() => scrollToSection('contact')}
-            className="bg-accent hover:bg-accent-dark text-white px-4 py-2 rounded-lg transition font-semibold text-center"
+            className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-md transition font-semibold text-center"
           >
             Contact Us
           </Button>

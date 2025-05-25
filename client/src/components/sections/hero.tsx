@@ -20,16 +20,16 @@ const Hero: React.FC = () => {
             <p className="text-white/90 text-lg mb-8 max-w-xl">
               PMC Jordan delivers cutting-edge AI voice bots, chat bots, and comprehensive digital solutions to transform your business operations.
             </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-5">
               <Button
                 onClick={() => scrollToSection('services')}
-                className="bg-white text-primary hover:bg-gray-100 transition px-8 py-6 rounded-lg font-semibold text-center"
+                className="bg-white text-primary hover:bg-white/90 transition px-8 py-5 rounded-md font-semibold text-center shadow-md"
               >
                 Explore Solutions
               </Button>
               <Button
                 onClick={() => scrollToSection('contact')}
-                className="bg-accent hover:bg-accent-dark text-white transition px-8 py-6 rounded-lg font-semibold text-center"
+                className="bg-secondary hover:bg-secondary/90 text-white transition px-8 py-5 rounded-md font-semibold text-center shadow-md"
               >
                 Get in Touch
               </Button>
