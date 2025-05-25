@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
     {
       icon: 'location_on',
       title: 'Address',
-      content: 'King Hussein Business Park, Amman, Jordan'
+      content: 'Blue Area, Islamabad, Pakistan'
     },
     {
       icon: 'schedule',
