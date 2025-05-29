@@ -1,6 +1,8 @@
-import React from 'react';
-import { MaterialIcon, CheckCircleIcon, ArrowRightIcon } from '@/components/ui/icons';
-import { Button } from '@/components/ui/button';
+import React from "react";
+import { MaterialIcon, CheckCircleIcon, ArrowRightIcon } from "../ui/icons";
+import { Button } from "../ui/button";
+import { AIVoiceAgentForm } from "../ui/AIVoiceAgentForm";
+import { AIChatbotForm } from "../ui/AIChatbotForm";
 
 interface ServiceFeature {
   text: string;
@@ -11,14 +13,64 @@ interface ServiceProps {
   title: string;
   description: string;
   features: ServiceFeature[];
+  serviceType?: "voice" | "chat" | "agent";
 }
 
-const ServiceCard: React.FC<ServiceProps> = ({ icon, title, description, features }) => {
+const ServiceCard: React.FC<ServiceProps> = ({
+  icon,
+  title,
+  description,
+  features,
+  serviceType,
+}) => {
   const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const renderActionButton = () => {
+    if (serviceType === "voice") {
+      return (
+        <AIVoiceAgentForm
+          trigger={
+            <Button
+              variant="link"
+              className="text-secondary font-semibold hover:text-secondary/80 p-0 flex items-center"
+            >
+              Try Now <ArrowRightIcon className="ml-1.5 h-4 w-4" />
+            </Button>
+          }
+        />
+      );
+    }
+
+    if (serviceType === "chat") {
+      return (
+        <AIChatbotForm
+          trigger={
+            <Button
+              variant="link"
+              className="text-secondary font-semibold hover:text-secondary/80 p-0 flex items-center"
+            >
+              Try Now <ArrowRightIcon className="ml-1.5 h-4 w-4" />
+            </Button>
+          }
+        />
+      );
+    }
+
+    // Default for AI Agents or other services
+    return (
+      <Button
+        variant="link"
+        onClick={scrollToContact}
+        className="text-secondary font-semibold hover:text-secondary/80 p-0 flex items-center"
+      >
+        Learn More <ArrowRightIcon className="ml-1.5 h-4 w-4" />
+      </Button>
+    );
   };
 
   return (
@@ -36,13 +88,7 @@ const ServiceCard: React.FC<ServiceProps> = ({ icon, title, description, feature
           </li>
         ))}
       </ul>
-      <Button 
-        variant="link"
-        onClick={scrollToContact}
-        className="text-secondary font-semibold hover:text-secondary/80 p-0 flex items-center"
-      >
-        Learn More <ArrowRightIcon className="ml-1.5 h-4 w-4" />
-      </Button>
+      {renderActionButton()}
     </div>
   );
 };
@@ -50,53 +96,65 @@ const ServiceCard: React.FC<ServiceProps> = ({ icon, title, description, feature
 const Services: React.FC = () => {
   const services = [
     {
-      icon: 'record_voice_over',
-      title: 'AI Voice Bots',
-      description: 'Intelligent voice assistants that can handle customer inquiries, process requests, and provide information in natural language.',
+      icon: "record_voice_over",
+      title: "AI Voice Bots",
+      description:
+        "Intelligent voice assistants that can handle customer inquiries, process requests, and provide information in natural language.",
       features: [
-        { text: 'Natural language processing' },
-        { text: 'Multi-language support' },
-        { text: 'Advanced voice recognition' }
-      ]
+        { text: "Natural language processing" },
+        { text: "Multi-language support" },
+        { text: "Advanced voice recognition" },
+      ],
+      serviceType: "voice" as const,
     },
     {
-      icon: 'chat',
-      title: 'AI Chat Bots',
-      description: 'Interactive chat assistants that provide instant responses to customer queries, improving engagement and support efficiency.',
+      icon: "chat",
+      title: "AI Chat Bots",
+      description:
+        "Interactive chat assistants that provide instant responses to customer queries, improving engagement and support efficiency.",
       features: [
-        { text: '24/7 customer support' },
-        { text: 'Contextual understanding' },
-        { text: 'Seamless handover to humans' }
-      ]
+        { text: "24/7 customer support" },
+        { text: "Contextual understanding" },
+        { text: "Seamless handover to humans" },
+      ],
+      serviceType: "chat" as const,
     },
     {
-      icon: 'smart_toy',
-      title: 'AI Agents',
-      description: 'Autonomous AI agents that can perform complex tasks, analyze data, and make decisions based on predefined parameters.',
+      icon: "smart_toy",
+      title: "AI Agents",
+      description:
+        "Autonomous AI agents that can perform complex tasks, analyze data, and make decisions based on predefined parameters.",
       features: [
-        { text: 'Task automation' },
-        { text: 'Predictive analytics' },
-        { text: 'Process optimization' }
-      ]
-    }
+        { text: "Task automation" },
+        { text: "Predictive analytics" },
+        { text: "Process optimization" },
+      ],
+      serviceType: "agent" as const,
+    },
   ];
 
   return (
     <section id="services" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Digital Solutions</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">Comprehensive technology solutions designed to optimize your operations and enhance customer experience across Pakistan.</p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            Our Digital Solutions
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Comprehensive technology solutions designed to optimize your
+            operations and enhance customer experience across Pakistan.
+          </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <ServiceCard 
+            <ServiceCard
               key={index}
               icon={service.icon}
               title={service.title}
               description={service.description}
               features={service.features}
+              serviceType={service.serviceType}
             />
           ))}
         </div>
