@@ -12,7 +12,7 @@ const Partnership: React.FC = () => {
 
   const benefits = [
     'Access to cutting-edge global technologies',
-    'Customized solutions for Pakistan\'s market needs',
+    'Customized solutions for UAE\'s market needs',
     'Combined expertise in technology and local business',
     'Comprehensive training and implementation support'
   ];
@@ -22,7 +22,7 @@ const Partnership: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Strategic Partnership</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">PMC Pakistan has partnered with potential.com, bringing world-class AI Agentic solutions to the Pakistani market.</p>
+          <p className="text-gray-600 max-w-2xl mx-auto">du UAE has partnered with potential.com, bringing world-class AI Agentic solutions to the UAE market.</p>
         </div>
 
         <div className="flex flex-col lg:flex-row items-center lg:space-x-12">

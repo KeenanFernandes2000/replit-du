@@ -15,10 +15,10 @@ const Hero: React.FC = () => {
         <div className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-              AI Agentic Solutions for Pakistan's Future
+              AI Agentic Solutions for UAE's Future
             </h1>
             <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
-              PMC Pakistan has partnered with potential.com, bringing world-class AI Agentic solutions to the Pakistani market.
+              du UAE has partnered with potential.com, bringing world-class AI Agentic solutions to the UAE market.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-5 justify-center">
               <Button

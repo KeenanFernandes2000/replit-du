@@ -34,7 +34,7 @@ const Features: React.FC = () => {
     {
       icon: 'support_agent',
       title: 'Local Expertise',
-      description: 'Specialized knowledge of Pakistan\'s business environment and requirements.'
+      description: 'Specialized knowledge of UAE\'s business environment and requirements.'
     }
   ];
 

@@ -42,11 +42,11 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-4">
               <div className="h-10 w-10 bg-white rounded-lg flex items-center justify-center mr-2">
-                <span className="text-primary font-bold text-xl">PMC</span>
+                <span className="text-primary font-bold text-xl">du</span>
               </div>
-              <span className="font-bold text-xl">PMC Pakistan</span>
+              <span className="font-bold text-xl">du UAE</span>
             </div>
-            <p className="text-gray-400 mb-4">Your trusted partner for innovative digital solutions in Pakistan.</p>
+            <p className="text-gray-400 mb-4">Your trusted partner for innovative digital solutions in UAE.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-accent transition">
                 <FacebookIcon className="w-5 h-5" />

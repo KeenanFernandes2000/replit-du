@@ -14,8 +14,8 @@ const Home: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>PMC Pakistan - Digital Solutions & AI Innovation</title>
-        <meta name="description" content="PMC Pakistan specializes in innovative digital solutions including AI voice bots, AI chat bots, AI agents and other technology solutions. Part of the pmc.me family serving Pakistan." />
+        <title>du UAE - Digital Solutions & AI Innovation</title>
+        <meta name="description" content="du UAE specializes in innovative digital solutions including AI voice bots, AI chat bots, AI agents and other technology solutions. Part of the du family serving UAE." />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet" />
       </Helmet>
