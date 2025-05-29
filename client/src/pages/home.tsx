@@ -8,7 +8,7 @@ import Services from '@/components/sections/services';
 import Partnership from '@/components/sections/partnership';
 import About from '@/components/sections/about';
 import CTA from '@/components/sections/cta';
-import Contact from '@/components/sections/contact';
+
 
 const Home: React.FC = () => {
   return (
@@ -26,7 +26,6 @@ const Home: React.FC = () => {
         <Partnership />
         <About />
         <CTA />
-        <Contact />
       </main>
       <Footer />
     </>
