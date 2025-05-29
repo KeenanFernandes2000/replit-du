@@ -65,7 +65,7 @@ const ServiceCard: React.FC<ServiceProps> = ({
     return (
       <Button
         variant="link"
-        onClick={scrollToContact}
+        onClick={() => window.open("https://potential.com/vera", "_blank")}
         className="text-secondary font-semibold hover:text-secondary/80 p-0 flex items-center"
       >
         Learn More <ArrowRightIcon className="ml-1.5 h-4 w-4" />
