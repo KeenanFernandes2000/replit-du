@@ -54,9 +54,11 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#" onClick={() => scrollToSection('home')} className="flex items-center space-x-2">
-          <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-xl">du</span>
-          </div>
+          <img 
+            src="/assets/image_1748513950125.png" 
+            alt="du logo" 
+            className="h-10 w-10"
+          />
           <div>
             <span className="font-bold text-primary text-xl">du</span>
             <p className="text-xs text-gray-600">Digital Solutions</p>
