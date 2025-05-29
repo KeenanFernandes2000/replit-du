@@ -53,12 +53,7 @@ const Header: React.FC = () => {
     <header className="fixed w-full bg-white shadow-lg z-50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" onClick={() => scrollToSection('home')} className="flex items-center space-x-2">
-          <img 
-            src="/assets/image_1748513950125.png" 
-            alt="du logo" 
-            className="h-10 w-10"
-          />
+        <a href="#" onClick={() => scrollToSection('home')} className="flex items-center">
           <div>
             <span className="font-bold text-primary text-xl">du</span>
             <p className="text-xs text-gray-600">Digital Solutions</p>
