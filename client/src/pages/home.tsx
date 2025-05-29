@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import Hero from '@/components/sections/hero';
-import Features from '@/components/sections/features';
+
 import Services from '@/components/sections/services';
 import Partnership from '@/components/sections/partnership';
 import About from '@/components/sections/about';
@@ -22,7 +22,6 @@ const Home: React.FC = () => {
       <Header />
       <main>
         <Hero />
-        <Features />
         <Services />
         <Partnership />
         <About />
