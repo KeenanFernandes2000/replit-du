@@ -55,10 +55,10 @@ const Header: React.FC = () => {
         {/* Logo */}
         <a href="#" onClick={() => scrollToSection('home')} className="flex items-center space-x-2">
           <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-xl">PMC</span>
+            <span className="text-white font-bold text-xl">du</span>
           </div>
           <div>
-            <span className="font-bold text-primary text-xl">PMC Pakistan</span>
+            <span className="font-bold text-primary text-xl">du</span>
             <p className="text-xs text-gray-600">Digital Solutions</p>
           </div>
         </a>
