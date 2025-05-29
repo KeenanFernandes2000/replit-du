@@ -56,7 +56,7 @@ const Header: React.FC = () => {
         <a href="#" onClick={() => scrollToSection('home')} className="flex items-center">
           <div>
             <span className="font-bold text-primary text-xl">du</span>
-            <p className="text-xs text-gray-600">Digital Solutions</p>
+            <p className="text-xs text-gray-600">AI Solutions</p>
           </div>
         </a>
         
