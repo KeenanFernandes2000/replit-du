@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
               AI Agentic Solutions for UAE's Future
             </h1>
             <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
-              du UAE has partnered with potential.com, bringing world-class AI Agentic solutions to the UAE market.
+              du has partnered with potential.com, bringing world-class AI Agentic solutions to the UAE market.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-5 justify-center">
               <Button
